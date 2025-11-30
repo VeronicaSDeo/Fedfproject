@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1d4ed8;      /* blue-700 */
+  --primary-soft: #dbeafe; /* blue-100 */
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+/* Centered max-width container */
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+/* Common input style */
+.input {
+  @apply w-full border border-slate-300 rounded-md px-3 py-2 bg-white text-sm
+  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+/* Primary button shortcut (if you want to reuse) */
+.btn-primary {
+  @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium
+  text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition;
+}
+
+/* Generic card style */
+.card {
+  @apply bg-white rounded-xl border border-slate-200 shadow-sm;
+}
